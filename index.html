@@ -15,6 +15,7 @@
 
 <body>
     <header class="jumbotron">
+        <h1 class="current-time"></h1>
         <h1 class="display-3">Work Day Scheduler</h1>
         <p class="lead">A simple calendar app for scheduling your work day</p>
         <p id="currentDay" class="lead"></p>
@@ -34,7 +35,7 @@
                     <th scope="row">1:00am</th>
                     <td></td>
                     <td></td>
-                    <td><a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+                    <td><a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Save</a>
                     </td>
                 </tr>
                 <tr>
@@ -196,10 +197,14 @@
     <!-- Moment.js file-->
     <script type="text/javascript">
 
+        $(document).ready(function () {
+            $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:ss a'))
+            //console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+        })
     </script>
     <script src="lib/moment/moment.min.js"></script>
     <script>
-        console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+        //console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
     </script>
 </body>
 
