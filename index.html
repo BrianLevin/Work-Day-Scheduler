@@ -28,13 +28,14 @@
                     <th scope="row">12:00am</th>
                     <td> Make image a button?</td>
                     <td> form?</td>
-                    <td><img src="image/image save button.png"></td>
+                    <td>save</td>
                 </tr>
                 <tr>
                     <th scope="row">1:00am</th>
                     <td></td>
                     <td></td>
-                    <td>save</td>
+                    <td><a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">2:00am</th>
@@ -193,9 +194,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- Moment.js file-->
+    <script type="text/javascript">
+
+    </script>
     <script src="lib/moment/moment.min.js"></script>
     <script>
-        console.log(moment());
+        console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
     </script>
 </body>
 
