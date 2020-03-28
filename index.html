@@ -27,9 +27,10 @@
             <tbody>
                 <tr>
                     <th scope="row">12:00am</th>
-                    <td><input class="form-control form-control-lg" type="text" placeholder=></td>
+                    <td><input class="form-control form-control-lg" type="text" id="time-one" placeholder=></td>
+                    <!--created forms and buttons for time blocks-->
                     <td></td>
-                    <td>save</td>
+                    <td><button class="saveBtn" type="submit">save</button></td>
                 </tr>
                 <tr>
                     <th scope="row">1:00am</th>
@@ -184,8 +185,8 @@
                 <tr>
                     <th scope="row">11:00pm</th>
                     <td></td>
-                    <td></td>
-                    <td>save</td>
+
+                    <td><button class="saveBtn">save</button> </td>
                 </tr>
             </tbody>
         </table>
@@ -198,11 +199,32 @@
     <script type="text/javascript">
 
         $(document).ready(function () {
-            $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:a')) //ss
-            //console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+            $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:a'));   // appended moment js format on top of the page
+            //var sentence = ("")
+            var timeTable = ['12:00am', '1:00am', "2:00am", "3:00am", "4:00am", "5:00am", "6:00am", "7:00am", "8:00am", "9:00am", "10:00am", "11:00am", "12:00pm", "1:00pm", "2:00pm", "3:00pm", "4:00pm", "5:00pm", "6:00pm", "7:00pm", "8:00pm", "9:00pm", "10:00pm", "11:00pm"]; // array of time values
+            //var saveEvent = ""
+
+            function saveEvent() {  //created a function for the save button events.
+
+                $(".saveBtn").on('click', function () {  // Made a  function  for the user to save their text data.
+                    event.preventDefault();
+                    var eventSchedule = [];
+
+                    if (element.submit("#time-one") === true) {
+                        localStorage.setItem("form-1", JSON.stringify[eventSchedule]);
+
+
+                    }
+
+
+
+                }) //
+            }
         })
+
+
     </script>
-    <script src="lib/moment/moment.min.js"></script>
+    <script src="lib/moment/moment.min.js"></script> <!-- created  lib folder, moment folder, and moment.min.js file-->
     <script>
         //console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
     </script>
