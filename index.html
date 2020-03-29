@@ -30,7 +30,8 @@
                     <td><input class="form-control form-control-lg" type="text" id="time-one" placeholder=></td>
                     <!--created forms and buttons for time blocks and  for the user to add their  scheduled event and  then submit schedule-->
                     <td></td>
-                    <td><button data-input-id="time-one" class="saveBtn" type="submit">save</button></td>
+                    <td><button data-input-id="time-one" class="saveBtn" class="present" type="submit">save</button>
+                    </td>
                     <!-- created data-input-id tags for the Jquary to store the users event text. -->
                 </tr>
                 <tr>
@@ -45,7 +46,8 @@
                     <td><input class="form-control form-control-lg" type="text" id="time-three" placeholder=></td>
                     <!--created forms and buttons for time blocks and for the user to add their  scheduled event and  then submit schedule-->
                     <td></td>
-                    <td><button data-input-id="time-three" class="saveBtn" type="submit">save</button></td>
+                    <td><button data-input-id="time-three" class="present" class="saveBtn" type="submit">save</button>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">3:00am</th>
@@ -208,16 +210,19 @@
 
         $(document).ready(function () { // created the document.ready function  for the DOM to run the javascript code.
             $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:a'));   // appended moment js format on top of the page so the viewer can see the  current time.
+
+            $('#time-one').moment().calendar();
+
             // Make an array  or single varibles all with ID forms  so when I say if a particular event is a current time, the it will turn the present color, else if, past color, else, future color?
-            var endOf = moment().endOf('hour').fromNow(); // an hour future
-            moment().startOf('hour').fromNow();        // an hour past manipulated day to hour
+            // moment().endOf('hour').fromNow(); // an hour future
+            //moment().startOf('hour').fromNow();        // an hour past manipulated day to hour
             // use jquery to get the html element's time i.e. 01am
             // if endOf > 01am
             // add past class $.addClass()
 
             //var sentence = ("")
             //var timeTable = ['12:00am', '1:00am', "2:00am", "3:00am", "4:00am", "5:00am", "6:00am", "7:00am", "8:00am", "9:00am", "10:00am", "11:00am", "12:00pm", "1:00pm", "2:00pm", "3:00pm", "4:00pm", "5:00pm", "6:00pm", "7:00pm", "8:00pm", "9:00pm", "10:00pm", "11:00pm"];
-            var calender = []; // created an empty array to store the events in the calender.
+            //var calender = []; // created an empty array to store the events in the calender.
             //
             // array of time values
             //var saveEvent = ""
@@ -229,7 +234,7 @@
                 var inputID = $(this).attr('data-input-id'); // this will target the value of the users input event
                 var inputText = $('#' + inputID).val(); // this will  store the html of the users value in the input event
                 console.log(inputText);
-                localStorage.setItem(inputID, inputText) // This will store and save the value in the input event
+                localStorage.setItem(inputID, inputText); // This will store and save the value in the input event
                 // grabbed the  user event text from the # time-one input box
                 //calender.push(eventSchedule);
 
@@ -241,9 +246,11 @@
 
 
 
-
             }) //
-            // localstorage.getItem
+
+            localStorage.getItem('data-input-id');
+
+
         })
 
 
