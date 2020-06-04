@@ -35,5 +35,9 @@ document.ready(function () {
         });
     }
     hourUpdater();
+    // set up interval to check if current time needs to be updated
+    var interval = setInterval(hourUpdater, 15000);
+
+
 
 });
