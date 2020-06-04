@@ -13,6 +13,11 @@ document.ready(function () {
         // get current number of hours
         var currentHour = moment().hours();
 
+        // loop over time blocks
+        $('.time-block').each(function () {
+            var blockHour = parseInt($(this).attr('id').split('-')[1]);
+        }
+
     }
 
 });
