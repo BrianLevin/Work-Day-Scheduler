@@ -40,6 +40,7 @@ document.ready(function () {
 
     // load any saved data from local storage
     $('#hour-9 .description').val(localStorage.getItem('hour-9'));
+    $('#hour-10.description').val(localStorage.getItem('hour-10'));
 
 
 
