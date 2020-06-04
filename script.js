@@ -5,6 +5,9 @@ document.ready(function () {
         var value = $(this).siblings('.description').val();
         var time = $(this).parent().attr('id');
 
+        // save in localStorage
+        localStorage.setItem(time, value);
+
     });
 
 });
