@@ -3,7 +3,7 @@ document.ready(function () {
     $('.saveBtn').on('click', function () {
         // get nearby values
         var value = $(this).siblings('.description').val();
-
+        var time = $(this).parent().attr('id');
 
     });
 
