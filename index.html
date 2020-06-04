@@ -76,85 +76,89 @@
         <div class="col-md-1 hour">
             3PM
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <!-- Moment.js file-->
-        <script type="text/javascript">
+        <div id="hour-16" class="row time-block">
+            <div class="col-md-1 hour">
+                4PM
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <!-- Moment.js file-->
+            <script type="text/javascript">
 
-            $(document).ready(function () { // created the document.ready function  for the DOM to run the javascript code.
-                $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:a')); // This Moment JS appends the current time on the page.
+                $(document).ready(function () { // created the document.ready function  for the DOM to run the javascript code.
+                    $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:a')); // This Moment JS appends the current time on the page.
 
-                // These comments repesent some  javascript and jQuery methods I tried but I couldnt get the past, present, or future time on the scheduler events.
+                    // These comments repesent some  javascript and jQuery methods I tried but I couldnt get the past, present, or future time on the scheduler events.
 
-                //////////////////////////////////////////////////////// /
+                    //////////////////////////////////////////////////////// /
 
-                //var one= '#data-input-id';
+                    //var one= '#data-input-id';
 
-                //function Time(){
-                //if (one === $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:a'));){
-                //return;
-                //};
+                    //function Time(){
+                    //if (one === $('.current-time').append(moment().format('MMMM Do YYYY, h:mm:a'));){
+                    //return;
+                    //};
 
-                // }; 
+                    // }; 
 
-                //if ($('#time-one').moment().subtract(1, 'days').calendar() > '12am') {
-                //$.addClass('past');
-                //};
-                // this  shows the past time events)
+                    //if ($('#time-one').moment().subtract(1, 'days').calendar() > '12am') {
+                    //$.addClass('past');
+                    //};
+                    // this  shows the past time events)
 
-                //$('#time-one').moment().subtract(1, 'days').calendar(); // this  shows the past time events
-                //$('#time-three').moment().calendar(); // this  moment shows the present time
-                //$('#time-eight').moment().add(1, 'days').calendar(); // this moment shows the future
-                // $('#time-one').moment().subtract(1, 'days').calendar();
-                //console.log('#time-one');
-
-
-                // use jquery to get the html element's time i.e. 01am
-                // if endOf > 01am
-                // add past class $.addClass()
-
-                //var sentence = ("")
-                //var timeTable = ['12:00am', '1:00am', "2:00am", "3:00am", "4:00am", "5:00am", "6:00am", "7:00am", "8:00am", "9:00am", "10:00am", "11:00am", "12:00pm", "1:00pm", "2:00pm", "3:00pm", "4:00pm", "5:00pm", "6:00pm", "7:00pm", "8:00pm", "9:00pm", "10:00pm", "11:00pm"];
-                //var calender = []; // created an empty array to store the events in the calender.
-
-                ////////////////////////////////////////////////////////////
+                    //$('#time-one').moment().subtract(1, 'days').calendar(); // this  shows the past time events
+                    //$('#time-three').moment().calendar(); // this  moment shows the present time
+                    //$('#time-eight').moment().add(1, 'days').calendar(); // this moment shows the future
+                    // $('#time-one').moment().subtract(1, 'days').calendar();
+                    //console.log('#time-one');
 
 
+                    // use jquery to get the html element's time i.e. 01am
+                    // if endOf > 01am
+                    // add past class $.addClass()
 
-                //created a function for the save button events.
+                    //var sentence = ("")
+                    //var timeTable = ['12:00am', '1:00am', "2:00am", "3:00am", "4:00am", "5:00am", "6:00am", "7:00am", "8:00am", "9:00am", "10:00am", "11:00am", "12:00pm", "1:00pm", "2:00pm", "3:00pm", "4:00pm", "5:00pm", "6:00pm", "7:00pm", "8:00pm", "9:00pm", "10:00pm", "11:00pm"];
+                    //var calender = []; // created an empty array to store the events in the calender.
 
-                $(".saveBtn").on('click', function () {  // Made a  function   when the user clicks the save button to store their data.
-                    event.preventDefault(); // preventing the default behavior of the page after the button is clicked
-                    var inputID = $(this).attr('data-input-id'); // this will target the  data input ID of the users input calender  event
-                    var inputText = $('#' + inputID).val(); // this will  add the html of the users value in the input  calender event
-                    console.log(inputText); // testing if the users inputText works.
-                    localStorage.setItem(inputID, inputText); // This will store and save the value in the input  calender event
-
-                    //calender.push(eventSchedule);
-
-                    //if (element.submit("#time-one") === true) {
-                    //localStorage.setItem("form-1", JSON.stringify[eventSchedule]); // made an if statement for when the user clicks the button, their event will be stored and saved.
-
-
-                    //}
+                    ////////////////////////////////////////////////////////////
 
 
 
-                }) //
+                    //created a function for the save button events.
 
-                //localStorage.getItem('data-input-id'); // Tried getting an Item  from the local storage onto the scheduler but could not figure it out.
+                    $(".saveBtn").on('click', function () {  // Made a  function   when the user clicks the save button to store their data.
+                        event.preventDefault(); // preventing the default behavior of the page after the button is clicked
+                        var inputID = $(this).attr('data-input-id'); // this will target the  data input ID of the users input calender  event
+                        var inputText = $('#' + inputID).val(); // this will  add the html of the users value in the input  calender event
+                        console.log(inputText); // testing if the users inputText works.
+                        localStorage.setItem(inputID, inputText); // This will store and save the value in the input  calender event
+
+                        //calender.push(eventSchedule);
+
+                        //if (element.submit("#time-one") === true) {
+                        //localStorage.setItem("form-1", JSON.stringify[eventSchedule]); // made an if statement for when the user clicks the button, their event will be stored and saved.
 
 
-            })
+                        //}
 
 
-        </script>
-        <script src="lib/moment/moment.min.js"></script>
-        <!-- created  lib folder, moment folder, and moment.min.js file to hold the current time-->
 
-        <script>
+                    }) //
 
-        </script>
+                    //localStorage.getItem('data-input-id'); // Tried getting an Item  from the local storage onto the scheduler but could not figure it out.
+
+
+                })
+
+
+            </script>
+            <script src="lib/moment/moment.min.js"></script>
+            <!-- created  lib folder, moment folder, and moment.min.js file to hold the current time-->
+
+            <script>
+
+            </script>
 </body>
 
 </html>
