@@ -26,7 +26,13 @@ document.ready(function () {
                 $(this).addClass('present');
 
             }
-        }
+            else {
+                $(this).removeClass('past');
+                $(this).removeClass('present');
+                $(this).addClass('future');
+
+            }
+        });
 
     }
 
