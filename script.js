@@ -10,7 +10,8 @@ document.ready(function () {
 
     });
     function hourUpdater() {
-
+        // get current number of hours
+        var currentHour = moment().hours();
 
     }
 
