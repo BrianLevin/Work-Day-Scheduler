@@ -38,6 +38,12 @@ document.ready(function () {
     // set up interval to check if current time needs to be updated
     var interval = setInterval(hourUpdater, 15000);
 
+    // load any saved data from local storage
+    $('#hour-9 .description').val(localStorage.getItem('hour-9'));
+
+
+
+
 
 
 });
