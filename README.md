@@ -11,6 +11,6 @@ For this assignment, I used Html and Css to display the Calendar  on the page. I
 
 
 
-## What I learned
+## Deployed Application:
 
-I learned I need more work on understanding  and utilizing the proper syntax of jQuery and  Javascript.
+https://brianlevin.github.io/Work-Day-Scheduler/
