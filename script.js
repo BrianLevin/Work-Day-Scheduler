@@ -9,5 +9,9 @@ document.ready(function () {
         localStorage.setItem(time, value);
 
     });
+    function hourUpdater() {
+
+
+    }
 
 });
