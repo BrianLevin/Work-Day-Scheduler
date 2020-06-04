@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-![](images/screenshot.png)
+![](images/image.png)
 
 ## Assignment objectives:
 
