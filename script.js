@@ -21,7 +21,11 @@ document.ready(function () {
             if (blockHour < currentHour) {
                 $(this).addClass('past');
             }
-            else if ()
+            else if (blockHour === currentHour) {
+                $(this).removeClass('past');
+                $(this).addClass('present');
+
+            }
         }
 
     }
