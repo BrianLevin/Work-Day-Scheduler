@@ -11,6 +11,3 @@ For this assignment, I used Html and Css to display the Calendar  on the page. I
 
 
 
-## Deployed Application:
-
-https://brianlevin.github.io/Work-Day-Scheduler/
