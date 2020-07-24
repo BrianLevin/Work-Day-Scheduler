@@ -6,8 +6,26 @@
 
 The purpose of this application allows the  user to create  a scheduler  to input events for that time. The scheduler is suppose to display a color for each time block within the scheduler which represent's the   past hour, current hour, and future hour in real time. The user's event is then stored onto the display screen of the calendar once the user hits the save button.
  ## Click [here](https://brianlevin.github.io/Work-Day-Scheduler/) for the live app. 
-## Syntax Used
-For this assignment, I used Html and Css to display the Calendar  on the page. I used javascript and jQuery to display the dynamic functionality of the changing colors of the calendar and the saving events. I used Moment.Js to append the current time on top of the page and to get the past, present, and future event colors to display on the calendar.
+ 
+ 
+ ## Step by Step Walk through:
+ This is the home screen:
+ ![](images/Homescreen.png)
+  ![](images/Homescreen1.png) 
+  
+ The user can then put in events that they need to complete during that time:
+  ![](images/events.png)
+  
+  The events will then be saved if the user refreshes the page:
+   ![](images/events.png.png) 
+   
+## Libraries and Frameworks
+
+- HTML
+- CSS
+- Javascript
+- Jquery
+- Moment.js
 
 
 
