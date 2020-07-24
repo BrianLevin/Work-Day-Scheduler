@@ -28,5 +28,8 @@ The purpose of this application allows the  user to create  a scheduler  to inpu
 - Jquery
 - Moment.js
 
+## Email:
+
+bml201095@gmail.com
 
 
