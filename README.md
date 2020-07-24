@@ -1,16 +1,32 @@
 # Work Day Scheduler
 
-![](images/screenshot.png)
+![](images/image.png)
 
-## Assignment objectives:
+## Application  objectives:
 
-The purpose of this assignment was  to create  a calendar  which allows the user to put in events for that time. The calendar is suppose to display a color for each time block within the calendar which represent's the    past hour, current hour, and future hour in real time. The user's event is then stored onto the display screen of the calendar once the user hits the save button. 
+The purpose of this application allows the  user to create  a scheduler  to input events for that time. The scheduler is suppose to display a color for each time block within the scheduler which represent's the   past hour, current hour, and future hour in real time. The user's event is then stored onto the display screen of the calendar once the user hits the save button.
+ ## Click [here](https://brianlevin.github.io/Work-Day-Scheduler/) for the live app. 
+ 
+ 
+ ## Step by Step Walk through:
+ This is the home screen:
+ 
+ ![Home Screenshot](images/Homescreen.png)
+  ![Home Screenshot1](images/Homescreen1.png) 
+  
+ The user can then put in events that they need to complete during that time:
+  ![Events Screenshot](images/events.png)
+  
+  The events will then be saved if the user refreshes the page:
+   ![Events Screenshot Stored](images/events.png.png) 
+   
+## Libraries and Frameworks
 
-## Syntax Used
-For this assignment, I used Html and Css to display the Calendar  on the page. I used javascript and jQuery to display the dynamic functionality of the changing colors of the calendar and the saving events. I used Moment.Js to append the current time on top of the page and to get the past, present, and future event colors to display on the calendar.
+- HTML
+- CSS
+- Javascript
+- Jquery
+- Moment.js
 
 
 
-## What I learned
-
-I learned I need more work on understanding  and utilizing the proper syntax of jQuery and  Javascript.
