@@ -10,14 +10,15 @@ The purpose of this application allows the  user to create  a scheduler  to inpu
  
  ## Step by Step Walk through:
  This is the home screen:
- ![](images/Homescreen.png)
-  ![](images/Homescreen1.png) 
+ 
+ ![Home Screenshot](images/Homescreen.png)
+  ![Home Screenshot1](images/Homescreen1.png) 
   
  The user can then put in events that they need to complete during that time:
-  ![](images/events.png)
+  ![Events Screenshot](images/events.png)
   
   The events will then be saved if the user refreshes the page:
-   ![](images/events.png.png) 
+   ![Events Screenshot Stored](images/events.png.png) 
    
 ## Libraries and Frameworks
 
