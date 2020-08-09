@@ -2,7 +2,7 @@
 
 ![](images/image.png)
 
-## Application  objectives:
+## Application  description:
 
 The purpose of this application allows the  user to create  a scheduler  to input events for that time. The scheduler is suppose to display a color for each time block within the scheduler which represent's the   past hour, current hour, and future hour in real time. The user's event is then stored onto the display screen of the calendar once the user hits the save button.
 
