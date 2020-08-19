@@ -1,6 +1,5 @@
 # Work Day Scheduler
 
-![](images/image.png)
 
 ## Application  description:
 
@@ -18,15 +17,13 @@ The purpose of this application allows the  user to create  a scheduler  to inpu
   
   
   The events will then be saved if the user refreshes the page:
-   ![Events Screenshot Stored](images/events.png) 
+   ![Events Screenshot Stored](images/notfound.png) 
    
 ## Libraries and Frameworks:
 
 - HTML
 - CSS
 - Javascript
-- Jquery
-- Moment.js
 
 ## Email:
 
